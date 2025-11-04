@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="PyOneers - AI automation and development company specializing in custom AI agents, intelligent systems, and production-ready ML solutions across industries." />
+    <title>PyOneers — AI Automation & Development Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="header">
+      <div class="container header-inner">
+        <div class="logo-wrapper">
+          <h1 class="logo">PyOneers<span class="logo-accent">.</span></h1>
+          <span class="tagline">AI Automation</span>
+        </div>
+        <nav class="nav">
+          <a href="#expertise">Expertise</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#tech-stack">Tech Stack</a>
+          <a href="#contact" class="nav-cta">Start a Project</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <canvas id="particleCanvas" class="particle-canvas"></canvas>
+        <div class="hero-grid"></div>
+        <div class="container hero-content">
+          <div class="badge">🚀 Production-Ready AI Solutions</div>
+          <h2 class="hero-title">Engineering <span class="gradient-text typing-text" id="typingText">Intelligent Systems</span> That Solve Complex Problems</h2>
+          <p class="hero-lead">We build sophisticated AI agents, orchestration pipelines, and end-to-end automation systems using Python, LangGraph, and modern ML frameworks. Production-ready solutions from concept to deployment.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">
+              <span>Schedule Consultation</span>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-secondary" href="#solutions">Explore Solutions</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-value">50+</div>
+              <div class="stat-label">AI Systems Deployed</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">10+</div>
+              <div class="stat-label">Technical Domains</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">24/7</div>
+              <div class="stat-label">Automated Operations</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Expertise Section -->
+      <section id="expertise" class="section-expertise">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Core Capabilities</span>
+            <h3 class="section-title">Built for Complex Challenges</h3>
+            <p class="section-subtitle">Deep technical expertise across the AI and automation stack</p>
+          </div>
+          
+          <div class="expertise-grid">
+            <article class="expertise-card" data-animate>
+              <div class="expertise-icon">🤖</div>
+              <h4>AI Agent Development</h4>
+              <p>Multi-agent systems using LangGraph, orchestrating complex workflows with memory, tool use, and human-in-the-loop patterns.</p>
+              <ul class="tech-tags">
+                <li>LangChain</li>
+                <li>LangGraph</li>
+                <li>AutoGen</li>
+              </ul>
+            </article>
+
+            <article class="expertise-card" data-animate>
+              <div class="expertise-icon">🧠</div>
+              <h4>Intelligent Document Processing</h4>
+              <p>RAG systems, document understanding, and knowledge extraction. Multi-modal pipelines for structured and unstructured data.</p>
+              <ul class="tech-tags">
+                <li>Vector DBs</li>
+                <li>OCR</li>
+                <li>Transformers</li>
+              </ul>
+            </article>
+
+            <article class="expertise-card" data-animate>
+              <div class="expertise-icon">⚡</div>
+              <h4>Full-Stack Development</h4>
+              <p>Production-grade applications with Django, FastAPI, React Native. Scalable architectures for real-time data processing.</p>
+              <ul class="tech-tags">
+                <li>Django</li>
+                <li>FastAPI</li>
+                <li>React Native</li>
+              </ul>
+            </article>
+
+            <article class="expertise-card" data-animate>
+              <div class="expertise-icon">👁️</div>
+              <h4>Computer Vision Systems</h4>
+              <p>Custom CV models for object detection, classification, segmentation, and anomaly detection. Real-time inference and edge deployment.</p>
+              <ul class="tech-tags">
+                <li>PyTorch</li>
+                <li>YOLO</li>
+                <li>OpenCV</li>
+              </ul>
+            </article>
+
+            <article class="expertise-card" data-animate>
+              <div class="expertise-icon">💬</div>
+              <h4>Conversational AI & Integration</h4>
+              <p>Multi-channel chatbots, WhatsApp Business API, Slack/Teams integrations. Building intelligent communication layers that scale.</p>
+              <ul class="tech-tags">
+                <li>WhatsApp API</li>
+                <li>Webhooks</li>
+                <li>OAuth</li>
+              </ul>
+            </article>
+
+            <article class="expertise-card" data-animate>
+              <div class="expertise-icon">🗄️</div>
+              <h4>Data Engineering</h4>
+              <p>Graph databases (Neo4j), SQL optimization, vector stores for RAG. Architecting data pipelines for ML workloads.</p>
+              <ul class="tech-tags">
+                <li>Neo4j</li>
+                <li>PostgreSQL</li>
+                <li>Pinecone</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solutions Section -->
+      <section id="solutions" class="section-solutions">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">What We Build</span>
+            <h3 class="section-title">End-to-End AI Solutions</h3>
+          </div>
+
+          <div class="solutions-grid">
+            <article class="solution-card" data-animate>
+              <div class="solution-number">01</div>
+              <h4>Intelligent Agent Systems</h4>
+              <p>Multi-agent orchestration for complex workflows including research synthesis, content generation, data processing, and decision support with LangGraph state management.</p>
+              <div class="solution-outcome">
+                <span class="outcome-label">Impact:</span>
+                <span>40-hour manual workflows automated to 15 minutes</span>
+              </div>
+            </article>
+
+            <article class="solution-card" data-animate>
+              <div class="solution-number">02</div>
+              <h4>Document Intelligence Platforms</h4>
+              <p>RAG-powered document Q&A, automated extraction, classification, and summarization. Custom knowledge bases with semantic search and retrieval.</p>
+              <div class="solution-outcome">
+                <span class="outcome-label">Impact:</span>
+                <span>95% reduction in document processing time</span>
+              </div>
+            </article>
+
+            <article class="solution-card" data-animate>
+              <div class="solution-number">03</div>
+              <h4>Real-Time Analytics & Monitoring</h4>
+              <p>Computer vision systems for quality control, anomaly detection, and predictive maintenance. Deployed across manufacturing, logistics, and operations.</p>
+              <div class="solution-outcome">
+                <span class="outcome-label">Impact:</span>
+                <span>92% detection accuracy, 60% cost reduction</span>
+              </div>
+            </article>
+
+            <article class="solution-card" data-animate>
+              <div class="solution-number">04</div>
+              <h4>Enterprise LLM Deployment</h4>
+              <p>Secure, on-premises AI systems using Azure OpenAI or self-hosted models. Fine-tuned solutions with full data sovereignty and compliance.</p>
+              <div class="solution-outcome">
+                <span class="outcome-label">Impact:</span>
+                <span>100% data privacy, enterprise-grade security</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Demo Section -->
+      <section id="demo" class="section-demo">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Interactive Experience</span>
+            <h3 class="section-title">See Our AI in Action</h3>
+            <p class="section-subtitle">Experience the power of intelligent automation</p>
+          </div>
+
+          <div class="demo-tabs">
+            <button class="demo-tab active" data-tab="agent">AI Agent Flow</button>
+            <button class="demo-tab" data-tab="code">Code Generation</button>
+            <button class="demo-tab" data-tab="quiz">Find Your Solution</button>
+          </div>
+
+          <!-- AI Agent Flow Demo -->
+          <div class="demo-content active" id="demo-agent">
+            <div class="demo-split">
+              <div class="demo-control">
+                <h4>LangGraph Agent Orchestration</h4>
+                <p>Watch how our multi-agent system processes a complex request</p>
+                <div class="demo-input-group">
+                  <textarea id="agentInput" placeholder="e.g., Analyze Q3 sales data and generate insights report" rows="3"></textarea>
+                  <button class="btn btn-primary" id="runAgentDemo">Execute Agent Flow</button>
+                </div>
+              </div>
+              <div class="demo-visual">
+                <div class="agent-flow" id="agentFlow">
+                  <div class="agent-node" data-step="1">
+                    <div class="node-icon">🎯</div>
+                    <div class="node-label">Task Analyzer</div>
+                    <div class="node-status">Ready</div>
+                  </div>
+                  <div class="flow-arrow">→</div>
+                  <div class="agent-node" data-step="2">
+                    <div class="node-icon">🔍</div>
+                    <div class="node-label">Data Retriever</div>
+                    <div class="node-status">Ready</div>
+                  </div>
+                  <div class="flow-arrow">→</div>
+                  <div class="agent-node" data-step="3">
+                    <div class="node-icon">🧠</div>
+                    <div class="node-label">AI Processor</div>
+                    <div class="node-status">Ready</div>
+                  </div>
+                  <div class="flow-arrow">→</div>
+                  <div class="agent-node" data-step="4">
+                    <div class="node-icon">📊</div>
+                    <div class="node-label">Report Generator</div>
+                    <div class="node-status">Ready</div>
+                  </div>
+                </div>
+                <div class="agent-output" id="agentOutput"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Generation Demo -->
+          <div class="demo-content" id="demo-code">
+            <div class="demo-split">
+              <div class="demo-control">
+                <h4>AI-Powered Code Generation</h4>
+                <p>Generate production-ready code from natural language</p>
+                <div class="demo-input-group">
+                  <textarea id="codePrompt" placeholder="e.g., Create a REST API endpoint for user authentication" rows="3"></textarea>
+                  <button class="btn btn-primary" id="generateCode">Generate Code</button>
+                </div>
+              </div>
+              <div class="demo-visual">
+                <div class="code-output">
+                  <div class="code-header">
+                    <span class="code-lang">Python</span>
+                    <button class="copy-btn" id="copyCode">Copy</button>
+                  </div>
+                  <pre id="generatedCode"><code># Click "Generate Code" to see AI-generated code appear here
+# Example output will be syntax-highlighted and ready to use</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Requirements Quiz -->
+          <div class="demo-content" id="demo-quiz">
+            <div class="quiz-container">
+              <div class="quiz-progress">
+                <div class="progress-bar">
+                  <div class="progress-fill" id="quizProgress"></div>
+                </div>
+                <span class="progress-text"><span id="currentQuestion">1</span> of 5</span>
+              </div>
+              
+              <div class="quiz-question" id="quizQuestion">
+                <h4 class="question-title">What's your primary automation goal?</h4>
+                <div class="quiz-options">
+                  <button class="quiz-option" data-value="agents">Build intelligent AI agents for complex workflows</button>
+                  <button class="quiz-option" data-value="data">Process and analyze large volumes of data</button>
+                  <button class="quiz-option" data-value="integration">Integrate AI into existing systems</button>
+                  <button class="quiz-option" data-value="custom">Custom LLM deployment and fine-tuning</button>
+                </div>
+              </div>
+
+              <div class="quiz-result" id="quizResult" style="display:none;">
+                <div class="result-icon">🎯</div>
+                <h4 class="result-title">Your Recommended Solution</h4>
+                <p class="result-description" id="resultDescription"></p>
+                <div class="result-features" id="resultFeatures"></div>
+                <div class="result-actions">
+                  <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+                  <button class="btn btn-secondary" id="restartQuiz">Take Quiz Again</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section id="tech-stack" class="section-tech">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Technology</span>
+            <h3 class="section-title">Modern AI & Development Stack</h3>
+            <p class="section-subtitle">Battle-tested tools for production systems</p>
+          </div>
+
+          <div class="tech-categories">
+            <div class="tech-category" data-animate>
+              <h5 class="tech-category-title">AI & ML</h5>
+              <div class="tech-items">
+                <span class="tech-item">Python</span>
+                <span class="tech-item">LangChain</span>
+                <span class="tech-item">LangGraph</span>
+                <span class="tech-item">PyTorch</span>
+                <span class="tech-item">TensorFlow</span>
+                <span class="tech-item">Hugging Face</span>
+                <span class="tech-item">OpenAI</span>
+                <span class="tech-item">Azure AI</span>
+              </div>
+            </div>
+
+            <div class="tech-category" data-animate>
+              <h5 class="tech-category-title">Backend & APIs</h5>
+              <div class="tech-items">
+                <span class="tech-item">Django</span>
+                <span class="tech-item">FastAPI</span>
+                <span class="tech-item">Flask</span>
+                <span class="tech-item">Celery</span>
+                <span class="tech-item">Redis</span>
+                <span class="tech-item">RabbitMQ</span>
+                <span class="tech-item">GraphQL</span>
+                <span class="tech-item">REST</span>
+              </div>
+            </div>
+
+            <div class="tech-category" data-animate>
+              <h5 class="tech-category-title">Databases</h5>
+              <div class="tech-items">
+                <span class="tech-item">PostgreSQL</span>
+                <span class="tech-item">Neo4j</span>
+                <span class="tech-item">MongoDB</span>
+                <span class="tech-item">Pinecone</span>
+                <span class="tech-item">Weaviate</span>
+                <span class="tech-item">Elasticsearch</span>
+              </div>
+            </div>
+
+            <div class="tech-category" data-animate>
+              <h5 class="tech-category-title">DevOps & Cloud</h5>
+              <div class="tech-items">
+                <span class="tech-item">Docker</span>
+                <span class="tech-item">Kubernetes</span>
+                <span class="tech-item">Azure</span>
+                <span class="tech-item">AWS</span>
+                <span class="tech-item">GitHub Actions</span>
+                <span class="tech-item">Terraform</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="section-cta">
+        <div class="container">
+          <div class="cta-box" data-animate>
+            <h3>Ready to Transform Your Operations?</h3>
+            <p>Let's discuss how AI automation can solve your specific challenges. From proof-of-concept to production deployment.</p>
+            <a class="btn btn-primary btn-large" href="#contact">
+              <span>Start Your Project</span>
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section-contact">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <span class="section-label">Get in Touch</span>
+              <h3 class="section-title">Let's Build Something Intelligent</h3>
+              <p>Share your challenge and we'll respond with a technical approach within 48 hours. No sales pitch—just engineering.</p>
+              
+              <div class="contact-details">
+                <div class="contact-detail">
+                  <div class="contact-icon">📧</div>
+                  <div>
+                    <div class="contact-detail-label">Email</div>
+                    <div class="contact-detail-value">hello@pyoneers.ai</div>
+                  </div>
+                </div>
+                <div class="contact-detail">
+                  <div class="contact-icon">💼</div>
+                  <div>
+                    <div class="contact-detail-label">Project Types</div>
+                    <div class="contact-detail-value">AI Agents, ML Systems, Automation</div>
+                  </div>
+                </div>
+                <div class="contact-detail">
+                  <div class="contact-icon">⚡</div>
+                  <div>
+                    <div class="contact-detail-label">Response Time</div>
+                    <div class="contact-detail-value">Within 48 hours</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <form id="contactForm" class="contact-form" action="#" onsubmit="return submitForm(event)">
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="you@company.com" required />
+              </div>
+              
+              <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Your organization" />
+              </div>
+              
+              <div class="form-group">
+                <label for="project">Project Type *</label>
+                <select id="project" name="project" required>
+                  <option value="">Select a project type</option>
+                  <option value="ai-agent">AI Agent Development</option>
+                  <option value="document-ai">Document Intelligence</option>
+                  <option value="cv">Computer Vision</option>
+                  <option value="chatbot">Conversational AI</option>
+                  <option value="llm">LLM Deployment</option>
+                  <option value="automation">Process Automation</option>
+                  <option value="other">Other / Consultation</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Project Details *</label>
+                <textarea id="message" name="message" placeholder="Describe your challenge, timeline, and any technical constraints..." rows="5" required></textarea>
+              </div>
+              
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">
+                  <span>Send Message</span>
+                </button>
+                <div id="formStatus" class="status"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <h4 class="logo">PyOneers<span class="logo-accent">.</span></h4>
+          <p>AI automation and development company specializing in intelligent solutions for agriculture, enterprise, and innovation.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Expertise</h5>
+            <ul>
+              <li><a href="#expertise">AI Agents</a></li>
+              <li><a href="#expertise">AgTech</a></li>
+              <li><a href="#expertise">Computer Vision</a></li>
+              <li><a href="#tech-stack">Tech Stack</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#solutions">Solutions</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#contact">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> PyOneers. Built with Python, AI, and precision.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
