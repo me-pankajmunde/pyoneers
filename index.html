@@ -3,302 +3,389 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="PyOneers - AI automation and development company specializing in custom AI agents, intelligent systems, and production-ready ML solutions across industries." />
-    <title>PyOneers — AI Automation & Development Solutions</title>
+    <meta name="description" content="PyOneers builds custom AI agents trained on your proprietary data to automate your exact workflows. No templates. No compromises. Just outcomes." />
+    <meta property="og:title" content="PyOneers | Custom AI Agents Built on Your Data" />
+    <meta property="og:description" content="Build AI agents that actually understand your business. 30-day pilots available." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>PyOneers | Custom AI Agents Built on Your Data</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
+    <!-- ==================== Navigation ==================== -->
     <header class="site-header" id="header">
       <div class="container header-inner">
-        <div class="logo-wrapper">
-          <h1 class="logo">PyOneers<span class="logo-accent">.</span></h1>
-          <span class="tagline">AI Automation</span>
-        </div>
-        <nav class="nav">
-          <a href="#expertise">Expertise</a>
-          <a href="#solutions">Solutions</a>
-          <a href="#tech-stack">Tech Stack</a>
-          <a href="#contact" class="nav-cta">Start a Project</a>
+        <a href="#" class="logo-link">
+          <span class="logo">PyOneers<span class="logo-dot">.</span></span>
+        </a>
+        <nav class="main-nav" id="mainNav">
+          <a href="#how-it-works">How It Works</a>
+          <a href="#use-cases">Use Cases</a>
+          <a href="#pricing">Pricing</a>
         </nav>
+        <div class="header-ctas">
+          <a href="#contact" class="btn btn-outline">Book a Demo</a>
+          <a href="#pilot" class="btn btn-primary">Start Pilot</a>
+        </div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <nav class="mobile-nav">
+          <a href="#how-it-works">How It Works</a>
+          <a href="#use-cases">Use Cases</a>
+          <a href="#pricing">Pricing</a>
+        </nav>
+        <div class="mobile-ctas">
+          <a href="#contact" class="btn btn-outline btn-block">Book a Demo</a>
+          <a href="#pilot" class="btn btn-primary btn-block">Start Pilot</a>
+        </div>
       </div>
     </header>
 
     <main>
-      <!-- Hero Section -->
-      <section class="hero">
-        <canvas id="particleCanvas" class="particle-canvas"></canvas>
-        <div class="hero-grid"></div>
-        <div class="container hero-content">
-          <div class="badge">🚀 Production-Ready AI Solutions</div>
-          <h2 class="hero-title">Engineering <span class="gradient-text typing-text" id="typingText">Intelligent Systems</span> That Solve Complex Problems</h2>
-          <p class="hero-lead">We build sophisticated AI agents, orchestration pipelines, and end-to-end automation systems using Python, LangGraph, and modern ML frameworks. Production-ready solutions from concept to deployment.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">
-              <span>Schedule Consultation</span>
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-            <a class="btn btn-secondary" href="#solutions">Explore Solutions</a>
+
+      <!-- ==================== Hero Section ==================== -->
+      <section class="hero" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-content" data-animate>
+            <h1 class="hero-title">AI Agents That Actually Understand Your Business</h1>
+            <p class="hero-subtitle">We build specialized AI agents trained on your proprietary data to automate your exact workflows. No templates. No compromises. Just outcomes.</p>
+            <div class="hero-actions">
+              <a href="#pilot" class="btn btn-primary btn-lg">Start Your Pilot</a>
+              <a href="#how-it-works" class="btn btn-outline btn-lg">See How It Works</a>
+            </div>
+            <div class="hero-trust">
+              <span class="trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Built on YOUR data
+              </span>
+              <span class="trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                You own 100%
+              </span>
+              <span class="trust-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                Pay for outcomes only
+              </span>
+            </div>
           </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <div class="stat-value">50+</div>
-              <div class="stat-label">AI Systems Deployed</div>
-            </div>
-            <div class="stat">
-              <div class="stat-value">10+</div>
-              <div class="stat-label">Technical Domains</div>
-            </div>
-            <div class="stat">
-              <div class="stat-value">24/7</div>
-              <div class="stat-label">Automated Operations</div>
+          <div class="hero-visual">
+            <div class="dashboard-card">
+              <div class="card-titlebar">
+                <div class="titlebar-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <span class="titlebar-label">PyOneers Agent Dashboard</span>
+              </div>
+              <div class="card-stats">
+                <div class="card-stat">
+                  <div class="card-stat-value">5</div>
+                  <div class="card-stat-label">Active Agents</div>
+                </div>
+                <div class="card-stat">
+                  <div class="card-stat-value" id="taskCounter">47</div>
+                  <div class="card-stat-label">Tasks Today</div>
+                </div>
+                <div class="card-stat">
+                  <div class="card-stat-value">$12.4K</div>
+                  <div class="card-stat-label">Value Created</div>
+                </div>
+              </div>
+              <div class="card-flow">
+                <div class="flow-node-mini">
+                  <div class="fn-icon-wrap data-wrap">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                  </div>
+                  <span>Your Data</span>
+                </div>
+                <div class="flow-connector-mini">
+                  <div class="connector-line">
+                    <div class="connector-pulse"></div>
+                  </div>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </div>
+                <div class="flow-node-mini active">
+                  <div class="fn-icon-wrap ai-wrap">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 0 2h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1 0-2h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/></svg>
+                  </div>
+                  <span>AI Agent</span>
+                  <div class="fn-glow"></div>
+                </div>
+                <div class="flow-connector-mini">
+                  <div class="connector-line">
+                    <div class="connector-pulse"></div>
+                  </div>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                </div>
+                <div class="flow-node-mini">
+                  <div class="fn-icon-wrap result-wrap">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <span>Results</span>
+                </div>
+              </div>
+              <div class="card-activity">
+                <div class="activity-header-row">
+                  <span class="activity-label">Live Activity</span>
+                  <span class="activity-live-dot"></span>
+                </div>
+                <div class="activity-feed" id="activityFeed">
+                  <div class="activity-row">
+                    <span class="act-dot act-processing"></span>
+                    <span class="act-text">Code Review Agent: reviewing PR #247...</span>
+                  </div>
+                  <div class="activity-row">
+                    <span class="act-dot act-done"></span>
+                    <span class="act-text">Lead Agent: scored 12 new leads ✓</span>
+                  </div>
+                  <div class="activity-row">
+                    <span class="act-dot act-done"></span>
+                    <span class="act-text">Invoice Agent: 34 invoices processed ✓</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Expertise Section -->
-      <section id="expertise" class="section-expertise">
+      <!-- ==================== Social Proof Bar ==================== -->
+      <section class="social-proof">
+        <div class="container">
+          <p class="proof-eyebrow">Trusted by forward-thinking teams</p>
+          <div class="proof-metrics">
+            <div class="proof-metric">
+              <div class="proof-value">47</div>
+              <div class="proof-label">Pilots Launched</div>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-metric">
+              <div class="proof-value">$2.1M</div>
+              <div class="proof-label">Cost Savings Delivered</div>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-metric">
+              <div class="proof-value">2.1M+</div>
+              <div class="proof-label">Tasks Automated</div>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-metric">
+              <div class="proof-value">30</div>
+              <div class="proof-label">Days to First Agent</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Problem Section ==================== -->
+      <section class="section-problem" id="problem">
         <div class="container">
           <div class="section-header">
-            <span class="section-label">Core Capabilities</span>
-            <h3 class="section-title">Built for Complex Challenges</h3>
-            <p class="section-subtitle">Deep technical expertise across the AI and automation stack</p>
+            <h2 class="section-title">Why Generic AI Platforms Fail Your Business</h2>
+            <p class="section-subtitle">Off-the-shelf AI agents are built for everyone—which means they're perfect for no one. Your workflows are unique. Your data is proprietary. You deserve better.</p>
           </div>
-          
-          <div class="expertise-grid">
-            <article class="expertise-card" data-animate>
-              <div class="expertise-icon">🤖</div>
-              <h4>AI Agent Development</h4>
-              <p>Multi-agent systems using LangGraph, orchestrating complex workflows with memory, tool use, and human-in-the-loop patterns.</p>
-              <ul class="tech-tags">
-                <li>LangChain</li>
-                <li>LangGraph</li>
-                <li>AutoGen</li>
-              </ul>
+          <div class="problem-grid">
+            <article class="problem-card" data-animate>
+              <div class="problem-icon">🚫</div>
+              <h3>Generic Templates</h3>
+              <p>Pre-built agents force you to change your process to fit their tools instead of the other way around.</p>
             </article>
-
-            <article class="expertise-card" data-animate>
-              <div class="expertise-icon">🧠</div>
-              <h4>Intelligent Document Processing</h4>
-              <p>RAG systems, document understanding, and knowledge extraction. Multi-modal pipelines for structured and unstructured data.</p>
-              <ul class="tech-tags">
-                <li>Vector DBs</li>
-                <li>OCR</li>
-                <li>Transformers</li>
-              </ul>
+            <article class="problem-card" data-animate>
+              <div class="problem-icon">💸</div>
+              <h3>Wasted Investment</h3>
+              <p><span class="problem-stat">67%</span> of companies report AI projects fail to deliver ROI when using off-the-shelf solutions.</p>
             </article>
-
-            <article class="expertise-card" data-animate>
-              <div class="expertise-icon">⚡</div>
-              <h4>Full-Stack Development</h4>
-              <p>Production-grade applications with Django, FastAPI, React Native. Scalable architectures for real-time data processing.</p>
-              <ul class="tech-tags">
-                <li>Django</li>
-                <li>FastAPI</li>
-                <li>React Native</li>
-              </ul>
+            <article class="problem-card" data-animate>
+              <div class="problem-icon">🔒</div>
+              <h3>Data Concerns</h3>
+              <p>Your proprietary data trains their models, not yours. Your competitive advantage leaks away silently.</p>
             </article>
-
-            <article class="expertise-card" data-animate>
-              <div class="expertise-icon">👁️</div>
-              <h4>Computer Vision Systems</h4>
-              <p>Custom CV models for object detection, classification, segmentation, and anomaly detection. Real-time inference and edge deployment.</p>
-              <ul class="tech-tags">
-                <li>PyTorch</li>
-                <li>YOLO</li>
-                <li>OpenCV</li>
-              </ul>
-            </article>
-
-            <article class="expertise-card" data-animate>
-              <div class="expertise-icon">💬</div>
-              <h4>Conversational AI & Integration</h4>
-              <p>Multi-channel chatbots, WhatsApp Business API, Slack/Teams integrations. Building intelligent communication layers that scale.</p>
-              <ul class="tech-tags">
-                <li>WhatsApp API</li>
-                <li>Webhooks</li>
-                <li>OAuth</li>
-              </ul>
-            </article>
-
-            <article class="expertise-card" data-animate>
-              <div class="expertise-icon">🗄️</div>
-              <h4>Data Engineering</h4>
-              <p>Graph databases (Neo4j), SQL optimization, vector stores for RAG. Architecting data pipelines for ML workloads.</p>
-              <ul class="tech-tags">
-                <li>Neo4j</li>
-                <li>PostgreSQL</li>
-                <li>Pinecone</li>
-              </ul>
+            <article class="problem-card" data-animate>
+              <div class="problem-icon">📊</div>
+              <h3>Poor Integration</h3>
+              <p>Disconnected tools create more manual work, not less. Generic agents don't know your systems or processes.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Solutions Section -->
-      <section id="solutions" class="section-solutions">
+      <!-- ==================== Solution Section ==================== -->
+      <section class="section-solution" id="solution">
         <div class="container">
           <div class="section-header">
-            <span class="section-label">What We Build</span>
-            <h3 class="section-title">End-to-End AI Solutions</h3>
+            <h2 class="section-title">The PyOneers Difference: Custom AI Built FOR You, BY You</h2>
+            <p class="section-subtitle">We don't believe in one-size-fits-all. Every agent we build is custom-designed for your workflows, trained on your data, and integrated with your systems.</p>
           </div>
-
-          <div class="solutions-grid">
-            <article class="solution-card" data-animate>
-              <div class="solution-number">01</div>
-              <h4>Intelligent Agent Systems</h4>
-              <p>Multi-agent orchestration for complex workflows including research synthesis, content generation, data processing, and decision support with LangGraph state management.</p>
-              <div class="solution-outcome">
-                <span class="outcome-label">Impact:</span>
-                <span>40-hour manual workflows automated to 15 minutes</span>
+          <div class="comparison-wrapper">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Generic AI Platforms</th>
+                  <th class="highlight-col">
+                    <span class="highlight-badge">PyOneers</span>
+                    Custom Agents
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Training Data</td>
+                  <td><span class="cmp-no">✗</span> Their generic datasets</td>
+                  <td class="highlight-col"><span class="cmp-yes">✓</span> YOUR proprietary data</td>
+                </tr>
+                <tr>
+                  <td>Workflows</td>
+                  <td><span class="cmp-no">✗</span> Fixed templates</td>
+                  <td class="highlight-col"><span class="cmp-yes">✓</span> Your exact processes</td>
+                </tr>
+                <tr>
+                  <td>Integration</td>
+                  <td><span class="cmp-no">✗</span> Limited APIs</td>
+                  <td class="highlight-col"><span class="cmp-yes">✓</span> Full custom integration</td>
+                </tr>
+                <tr>
+                  <td>Data Rights</td>
+                  <td><span class="cmp-no">✗</span> They own &amp; train on it</td>
+                  <td class="highlight-col"><span class="cmp-yes">✓</span> You own 100%</td>
+                </tr>
+                <tr>
+                  <td>Pricing Model</td>
+                  <td><span class="cmp-no">✗</span> Per-seat subscription</td>
+                  <td class="highlight-col"><span class="cmp-yes">✓</span> Pay for outcomes (RAAS)</td>
+                </tr>
+                <tr>
+                  <td>Speed to Deploy</td>
+                  <td><span class="cmp-neutral">~</span> 1 week (but limited)</td>
+                  <td class="highlight-col"><span class="cmp-yes">✓</span> 30-day custom pilot</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="value-cards">
+            <div class="value-card" data-animate>
+              <div class="value-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
               </div>
-            </article>
-
-            <article class="solution-card" data-animate>
-              <div class="solution-number">02</div>
-              <h4>Document Intelligence Platforms</h4>
-              <p>RAG-powered document Q&A, automated extraction, classification, and summarization. Custom knowledge bases with semantic search and retrieval.</p>
-              <div class="solution-outcome">
-                <span class="outcome-label">Impact:</span>
-                <span>95% reduction in document processing time</span>
+              <h3>Built on Your Data</h3>
+              <p>We train agents exclusively on your business data—documents, databases, APIs. Your competitive advantage stays yours.</p>
+            </div>
+            <div class="value-card" data-animate>
+              <div class="value-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
               </div>
-            </article>
-
-            <article class="solution-card" data-animate>
-              <div class="solution-number">03</div>
-              <h4>Real-Time Analytics & Monitoring</h4>
-              <p>Computer vision systems for quality control, anomaly detection, and predictive maintenance. Deployed across manufacturing, logistics, and operations.</p>
-              <div class="solution-outcome">
-                <span class="outcome-label">Impact:</span>
-                <span>92% detection accuracy, 60% cost reduction</span>
+              <h3>Deployed in Your Stack</h3>
+              <p>Connect to your existing tools: Salesforce, Jira, Slack, ERPs, custom databases. We build bridges, not silos.</p>
+            </div>
+            <div class="value-card" data-animate>
+              <div class="value-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
               </div>
-            </article>
-
-            <article class="solution-card" data-animate>
-              <div class="solution-number">04</div>
-              <h4>Enterprise LLM Deployment</h4>
-              <p>Secure, on-premises AI systems using Azure OpenAI or self-hosted models. Fine-tuned solutions with full data sovereignty and compliance.</p>
-              <div class="solution-outcome">
-                <span class="outcome-label">Impact:</span>
-                <span>100% data privacy, enterprise-grade security</span>
-              </div>
-            </article>
+              <h3>Priced on Your Results</h3>
+              <p>Results-as-a-Service pricing: $50/release shipped, $10/qualified lead, $0.50/invoice processed. Pay only when agents deliver.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Interactive Demo Section -->
-      <section id="demo" class="section-demo">
+      <!-- ==================== How It Works ==================== -->
+      <section class="section-how" id="how-it-works">
         <div class="container">
           <div class="section-header">
-            <span class="section-label">Interactive Experience</span>
-            <h3 class="section-title">See Our AI in Action</h3>
-            <p class="section-subtitle">Experience the power of intelligent automation</p>
+            <h2 class="section-title">From Discovery to Deployment in 30 Days</h2>
+            <p class="section-subtitle">A clear, proven process from your first call to your first automated workflow.</p>
           </div>
-
-          <div class="demo-tabs">
-            <button class="demo-tab active" data-tab="agent">AI Agent Flow</button>
-            <button class="demo-tab" data-tab="code">Code Generation</button>
-            <button class="demo-tab" data-tab="quiz">Find Your Solution</button>
-          </div>
-
-          <!-- AI Agent Flow Demo -->
-          <div class="demo-content active" id="demo-agent">
-            <div class="demo-split">
-              <div class="demo-control">
-                <h4>LangGraph Agent Orchestration</h4>
-                <p>Watch how our multi-agent system processes a complex request</p>
-                <div class="demo-input-group">
-                  <textarea id="agentInput" placeholder="e.g., Analyze Q3 sales data and generate insights report" rows="3"></textarea>
-                  <button class="btn btn-primary" id="runAgentDemo">Execute Agent Flow</button>
-                </div>
+          <div class="process-steps">
+            <div class="process-step" data-animate>
+              <div class="step-number-wrap">
+                <div class="step-number">1</div>
+                <div class="step-line"></div>
               </div>
-              <div class="demo-visual">
-                <div class="agent-flow" id="agentFlow">
-                  <div class="agent-node" data-step="1">
-                    <div class="node-icon">🎯</div>
-                    <div class="node-label">Task Analyzer</div>
-                    <div class="node-status">Ready</div>
-                  </div>
-                  <div class="flow-arrow">→</div>
-                  <div class="agent-node" data-step="2">
-                    <div class="node-icon">🔍</div>
-                    <div class="node-label">Data Retriever</div>
-                    <div class="node-status">Ready</div>
-                  </div>
-                  <div class="flow-arrow">→</div>
-                  <div class="agent-node" data-step="3">
-                    <div class="node-icon">🧠</div>
-                    <div class="node-label">AI Processor</div>
-                    <div class="node-status">Ready</div>
-                  </div>
-                  <div class="flow-arrow">→</div>
-                  <div class="agent-node" data-step="4">
-                    <div class="node-icon">📊</div>
-                    <div class="node-label">Report Generator</div>
-                    <div class="node-status">Ready</div>
-                  </div>
-                </div>
-                <div class="agent-output" id="agentOutput"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Code Generation Demo -->
-          <div class="demo-content" id="demo-code">
-            <div class="demo-split">
-              <div class="demo-control">
-                <h4>AI-Powered Code Generation</h4>
-                <p>Generate production-ready code from natural language</p>
-                <div class="demo-input-group">
-                  <textarea id="codePrompt" placeholder="e.g., Create a REST API endpoint for user authentication" rows="3"></textarea>
-                  <button class="btn btn-primary" id="generateCode">Generate Code</button>
-                </div>
-              </div>
-              <div class="demo-visual">
-                <div class="code-output">
-                  <div class="code-header">
-                    <span class="code-lang">Python</span>
-                    <button class="copy-btn" id="copyCode">Copy</button>
-                  </div>
-                  <pre id="generatedCode"><code># Click "Generate Code" to see AI-generated code appear here
-# Example output will be syntax-highlighted and ready to use</code></pre>
+              <div class="step-card">
+                <span class="step-badge">5-7 Days</span>
+                <div class="step-emoji">🔍</div>
+                <h3>Discovery</h3>
+                <ul class="step-list">
+                  <li>Deep-dive workshops with your team</li>
+                  <li>Map current processes and pain points</li>
+                  <li>Data audit and security review</li>
+                  <li>Identify automation opportunities</li>
+                </ul>
+                <div class="step-deliverable">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Discovery Report + ROI Projection
                 </div>
               </div>
             </div>
-          </div>
-
-          <!-- Requirements Quiz -->
-          <div class="demo-content" id="demo-quiz">
-            <div class="quiz-container">
-              <div class="quiz-progress">
-                <div class="progress-bar">
-                  <div class="progress-fill" id="quizProgress"></div>
-                </div>
-                <span class="progress-text"><span id="currentQuestion">1</span> of 5</span>
+            <div class="process-step" data-animate>
+              <div class="step-number-wrap">
+                <div class="step-number">2</div>
+                <div class="step-line"></div>
               </div>
-              
-              <div class="quiz-question" id="quizQuestion">
-                <h4 class="question-title">What's your primary automation goal?</h4>
-                <div class="quiz-options">
-                  <button class="quiz-option" data-value="agents">Build intelligent AI agents for complex workflows</button>
-                  <button class="quiz-option" data-value="data">Process and analyze large volumes of data</button>
-                  <button class="quiz-option" data-value="integration">Integrate AI into existing systems</button>
-                  <button class="quiz-option" data-value="custom">Custom LLM deployment and fine-tuning</button>
+              <div class="step-card">
+                <span class="step-badge">7-14 Days</span>
+                <div class="step-emoji">⚙️</div>
+                <h3>Design &amp; Build</h3>
+                <ul class="step-list">
+                  <li>Design agent architecture for your needs</li>
+                  <li>Data collection and preparation</li>
+                  <li>Train agents on your proprietary data</li>
+                  <li>Integration planning with your systems</li>
+                </ul>
+                <div class="step-deliverable">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Agent Prototypes + Test Environment
                 </div>
               </div>
-
-              <div class="quiz-result" id="quizResult" style="display:none;">
-                <div class="result-icon">🎯</div>
-                <h4 class="result-title">Your Recommended Solution</h4>
-                <p class="result-description" id="resultDescription"></p>
-                <div class="result-features" id="resultFeatures"></div>
-                <div class="result-actions">
-                  <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
-                  <button class="btn btn-secondary" id="restartQuiz">Take Quiz Again</button>
+            </div>
+            <div class="process-step" data-animate>
+              <div class="step-number-wrap">
+                <div class="step-number">3</div>
+                <div class="step-line"></div>
+              </div>
+              <div class="step-card">
+                <span class="step-badge">5-7 Days</span>
+                <div class="step-emoji">🚀</div>
+                <h3>Deploy</h3>
+                <ul class="step-list">
+                  <li>Deploy agents in controlled environment</li>
+                  <li>User acceptance testing</li>
+                  <li>Integration with production systems</li>
+                  <li>Team training and documentation</li>
+                </ul>
+                <div class="step-deliverable">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Live Pilot with Real Workloads
+                </div>
+              </div>
+            </div>
+            <div class="process-step" data-animate>
+              <div class="step-number-wrap">
+                <div class="step-number">4</div>
+              </div>
+              <div class="step-card">
+                <span class="step-badge step-badge-ongoing">Ongoing</span>
+                <div class="step-emoji">📈</div>
+                <h3>Optimize</h3>
+                <ul class="step-list">
+                  <li>Monitor performance metrics</li>
+                  <li>Gather user feedback</li>
+                  <li>Retrain agents on new data</li>
+                  <li>Expand to additional use cases</li>
+                </ul>
+                <div class="step-deliverable">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Monthly Performance Reports
                 </div>
               </div>
             </div>
@@ -306,194 +393,736 @@
         </div>
       </section>
 
-      <!-- Tech Stack Section -->
-      <section id="tech-stack" class="section-tech">
+      <!-- ==================== Agent Capabilities ==================== -->
+      <section class="section-capabilities" id="capabilities">
         <div class="container">
           <div class="section-header">
-            <span class="section-label">Technology</span>
-            <h3 class="section-title">Modern AI & Development Stack</h3>
-            <p class="section-subtitle">Battle-tested tools for production systems</p>
+            <h2 class="section-title">Custom Agents for Every Business Function</h2>
+            <p class="section-subtitle">We've built agents for engineering, marketing, operations, product, and agriculture. Your industry is next.</p>
           </div>
+          <div class="caps-tabs">
+            <div class="tab-nav" role="tablist">
+              <button class="tab-btn active" role="tab" data-tab="engineering" aria-selected="true">Engineering</button>
+              <button class="tab-btn" role="tab" data-tab="marketing" aria-selected="false">Marketing</button>
+              <button class="tab-btn" role="tab" data-tab="operations" aria-selected="false">Operations</button>
+              <button class="tab-btn" role="tab" data-tab="product" aria-selected="false">Product</button>
+              <button class="tab-btn" role="tab" data-tab="agriculture" aria-selected="false">Agriculture</button>
+            </div>
 
-          <div class="tech-categories">
-            <div class="tech-category" data-animate>
-              <h5 class="tech-category-title">AI & ML</h5>
-              <div class="tech-items">
-                <span class="tech-item">Python</span>
-                <span class="tech-item">LangChain</span>
-                <span class="tech-item">LangGraph</span>
-                <span class="tech-item">PyTorch</span>
-                <span class="tech-item">TensorFlow</span>
-                <span class="tech-item">Hugging Face</span>
-                <span class="tech-item">OpenAI</span>
-                <span class="tech-item">Azure AI</span>
+            <div class="tab-panel active" id="tab-engineering" role="tabpanel">
+              <div class="tab-layout">
+                <div class="tab-info">
+                  <div class="tab-agent-icon">💻</div>
+                  <h3>Code Review Agent</h3>
+                  <p class="tab-desc">Automated PR review, security scanning, and test coverage analysis trained on your codebase standards.</p>
+                  <h4>Capabilities:</h4>
+                  <ul class="tab-caps-list">
+                    <li>Reviews pull requests for code quality</li>
+                    <li>Identifies security vulnerabilities</li>
+                    <li>Suggests performance optimizations</li>
+                    <li>Generates test cases automatically</li>
+                  </ul>
+                  <div class="tab-pricing">Starting at <strong>$50 per release shipped</strong></div>
+                </div>
+                <div class="tab-case">
+                  <div class="case-tag">Use Case</div>
+                  <blockquote>"Our engineering team was stuck in code review purgatory. PyOneers built us a custom agent that cut review time from 4 hours to 15 minutes."</blockquote>
+                  <div class="case-metrics">
+                    <div class="case-m"><span class="case-m-icon">📈</span><span>Release velocity: <strong>+85%</strong></span></div>
+                    <div class="case-m"><span class="case-m-icon">💰</span><span>Time saved: <strong>$180K/year</strong></span></div>
+                    <div class="case-m"><span class="case-m-icon">⏱️</span><span>Code review: <strong>4 hrs → 15 min</strong></span></div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="tech-category" data-animate>
-              <h5 class="tech-category-title">Backend & APIs</h5>
-              <div class="tech-items">
-                <span class="tech-item">Django</span>
-                <span class="tech-item">FastAPI</span>
-                <span class="tech-item">Flask</span>
-                <span class="tech-item">Celery</span>
-                <span class="tech-item">Redis</span>
-                <span class="tech-item">RabbitMQ</span>
-                <span class="tech-item">GraphQL</span>
-                <span class="tech-item">REST</span>
+            <div class="tab-panel" id="tab-marketing" role="tabpanel">
+              <div class="tab-layout">
+                <div class="tab-info">
+                  <div class="tab-agent-icon">🎯</div>
+                  <h3>Lead Qualification Agent</h3>
+                  <p class="tab-desc">Intelligent lead scoring and nurture campaign automation trained on your ICP and historical data.</p>
+                  <h4>Capabilities:</h4>
+                  <ul class="tab-caps-list">
+                    <li>Analyzes lead behavior and engagement</li>
+                    <li>Scores leads based on your ICP</li>
+                    <li>Personalizes outreach sequences</li>
+                    <li>Syncs with CRM in real-time</li>
+                  </ul>
+                  <div class="tab-pricing">Starting at <strong>$10 per qualified lead</strong></div>
+                </div>
+                <div class="tab-case">
+                  <div class="case-tag">Use Case</div>
+                  <blockquote>"B2B company increased qualified leads by 3x while reducing marketing team workload by 40%."</blockquote>
+                  <div class="case-metrics">
+                    <div class="case-m"><span class="case-m-icon">📈</span><span>Qualified leads: <strong>3x increase</strong></span></div>
+                    <div class="case-m"><span class="case-m-icon">💰</span><span>Team workload: <strong>-40%</strong></span></div>
+                    <div class="case-m"><span class="case-m-icon">⏱️</span><span>Lead response: <strong>instant</strong></span></div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="tech-category" data-animate>
-              <h5 class="tech-category-title">Databases</h5>
-              <div class="tech-items">
-                <span class="tech-item">PostgreSQL</span>
-                <span class="tech-item">Neo4j</span>
-                <span class="tech-item">MongoDB</span>
-                <span class="tech-item">Pinecone</span>
-                <span class="tech-item">Weaviate</span>
-                <span class="tech-item">Elasticsearch</span>
+            <div class="tab-panel" id="tab-operations" role="tabpanel">
+              <div class="tab-layout">
+                <div class="tab-info">
+                  <div class="tab-agent-icon">📄</div>
+                  <h3>Invoice Processing Agent</h3>
+                  <p class="tab-desc">End-to-end invoice processing from receipt to payment, trained on your supplier formats.</p>
+                  <h4>Capabilities:</h4>
+                  <ul class="tab-caps-list">
+                    <li>Extracts data from PDF/email invoices</li>
+                    <li>Validates against purchase orders</li>
+                    <li>Routes for approval workflows</li>
+                    <li>Posts to accounting systems</li>
+                  </ul>
+                  <div class="tab-pricing">Starting at <strong>$0.50 per invoice processed</strong></div>
+                </div>
+                <div class="tab-case">
+                  <div class="case-tag">Use Case</div>
+                  <blockquote>"Finance team cut invoice processing time from 3 days to 2 hours, handling 10x the volume without hiring."</blockquote>
+                  <div class="case-metrics">
+                    <div class="case-m"><span class="case-m-icon">📈</span><span>Volume handled: <strong>10x</strong></span></div>
+                    <div class="case-m"><span class="case-m-icon">💰</span><span>Cost reduction: <strong>-65%</strong></span></div>
+                    <div class="case-m"><span class="case-m-icon">⏱️</span><span>Processing: <strong>3 days → 2 hrs</strong></span></div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="tech-category" data-animate>
-              <h5 class="tech-category-title">DevOps & Cloud</h5>
-              <div class="tech-items">
-                <span class="tech-item">Docker</span>
-                <span class="tech-item">Kubernetes</span>
-                <span class="tech-item">Azure</span>
-                <span class="tech-item">AWS</span>
-                <span class="tech-item">GitHub Actions</span>
-                <span class="tech-item">Terraform</span>
+            <div class="tab-panel" id="tab-product" role="tabpanel">
+              <div class="tab-layout">
+                <div class="tab-info">
+                  <div class="tab-agent-icon">🔬</div>
+                  <h3>User Research Agent</h3>
+                  <p class="tab-desc">Continuous user feedback analysis and insight generation from your support tickets and usage data.</p>
+                  <h4>Capabilities:</h4>
+                  <ul class="tab-caps-list">
+                    <li>Analyzes support tickets and feature requests</li>
+                    <li>Identifies patterns in user behavior</li>
+                    <li>Generates product insights reports</li>
+                    <li>Validates feature ideas with data</li>
+                  </ul>
+                  <div class="tab-pricing">Starting at <strong>$200 per validated feature idea</strong></div>
+                </div>
+                <div class="tab-case">
+                  <div class="case-tag">Use Case</div>
+                  <blockquote>"Product team discovered 3 high-value features hidden in 10,000+ support tickets—in days, not months."</blockquote>
+                  <div class="case-metrics">
+                    <div class="case-m"><span class="case-m-icon">📈</span><span>Tickets analyzed: <strong>10,000+</strong></span></div>
+                    <div class="case-m"><span class="case-m-icon">💰</span><span>Features found: <strong>3 high-value</strong></span></div>
+                    <div class="case-m"><span class="case-m-icon">⏱️</span><span>Research cycle: <strong>weeks → days</strong></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-panel" id="tab-agriculture" role="tabpanel">
+              <div class="tab-layout">
+                <div class="tab-info">
+                  <div class="tab-agent-icon">🌱</div>
+                  <h3>Crop Advisory Agent</h3>
+                  <p class="tab-desc">Real-time agricultural recommendations using local weather, soil, and market data.</p>
+                  <h4>Capabilities:</h4>
+                  <ul class="tab-caps-list">
+                    <li>Weather-based irrigation scheduling</li>
+                    <li>Pest and disease early warning</li>
+                    <li>Market price predictions</li>
+                    <li>Yield optimization recommendations</li>
+                  </ul>
+                  <div class="tab-pricing">Starting at <strong>$5 per farm per month</strong></div>
+                </div>
+                <div class="tab-case">
+                  <div class="case-tag">Use Case</div>
+                  <blockquote>"Farmer cooperative increased yields by 21% and reduced water usage by 30% in the first season."</blockquote>
+                  <div class="case-metrics">
+                    <div class="case-m"><span class="case-m-icon">📈</span><span>Crop yields: <strong>+21%</strong></span></div>
+                    <div class="case-m"><span class="case-m-icon">💰</span><span>Water usage: <strong>-30%</strong></span></div>
+                    <div class="case-m"><span class="case-m-icon">⏱️</span><span>Advisory reach: <strong>500 → 3,000</strong></span></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- CTA Section -->
-      <section class="section-cta">
+      <!-- ==================== Data Security ==================== -->
+      <section class="section-security" id="security">
         <div class="container">
-          <div class="cta-box" data-animate>
-            <h3>Ready to Transform Your Operations?</h3>
-            <p>Let's discuss how AI automation can solve your specific challenges. From proof-of-concept to production deployment.</p>
-            <a class="btn btn-primary btn-large" href="#contact">
-              <span>Start Your Project</span>
-              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+          <div class="section-header">
+            <h2 class="section-title">Your Data. Your Agents. Your Competitive Advantage.</h2>
+            <p class="section-subtitle">We build agents FOR you, not FOR us. Your proprietary data trains YOUR agents, never our models or anyone else's.</p>
+          </div>
+          <div class="security-layout">
+            <div class="security-guarantees">
+              <div class="guarantee-item" data-animate>
+                <div class="guarantee-check">✓</div>
+                <div class="guarantee-text">
+                  <h4>100% Data Ownership</h4>
+                  <p>You retain full ownership. We never use your data to train other clients' models. Ever.</p>
+                </div>
+              </div>
+              <div class="guarantee-item" data-animate>
+                <div class="guarantee-check">✓</div>
+                <div class="guarantee-text">
+                  <h4>Zero Data Retention (Optional)</h4>
+                  <p>Deploy agents on your infrastructure. We never even see your data if you prefer.</p>
+                </div>
+              </div>
+              <div class="guarantee-item" data-animate>
+                <div class="guarantee-check">✓</div>
+                <div class="guarantee-text">
+                  <h4>Encrypted Everything</h4>
+                  <p>AES-256 encryption at rest, TLS 1.3 in transit. SOC 2 Type II certification in progress.</p>
+                </div>
+              </div>
+              <div class="guarantee-item" data-animate>
+                <div class="guarantee-check">✓</div>
+                <div class="guarantee-text">
+                  <h4>Compliance Built-In</h4>
+                  <p>GDPR-ready, HIPAA-capable, audit logs for every agent action. No surprises.</p>
+                </div>
+              </div>
+              <div class="guarantee-item" data-animate>
+                <div class="guarantee-check">✓</div>
+                <div class="guarantee-text">
+                  <h4>Portable Architecture</h4>
+                  <p>No vendor lock-in. Export your agents, data, and models at any time.</p>
+                </div>
+              </div>
+            </div>
+            <div class="security-visual" data-animate>
+              <div class="sec-diagram">
+                <div class="sec-layer">
+                  <div class="sec-layer-icon">🗄️</div>
+                  <div class="sec-layer-content">
+                    <div class="sec-layer-title">YOUR DATA</div>
+                    <div class="sec-layer-sub">Stays on your servers</div>
+                  </div>
+                </div>
+                <div class="sec-arrow">↓ trained exclusively</div>
+                <div class="sec-layer sec-layer-highlight">
+                  <div class="sec-layer-icon">🤖</div>
+                  <div class="sec-layer-content">
+                    <div class="sec-layer-title">YOUR AGENTS</div>
+                    <div class="sec-layer-sub">Unique to your business</div>
+                  </div>
+                </div>
+                <div class="sec-arrow">↓ delivers</div>
+                <div class="sec-layer">
+                  <div class="sec-layer-icon">🏆</div>
+                  <div class="sec-layer-content">
+                    <div class="sec-layer-title">YOUR ADVANTAGE</div>
+                    <div class="sec-layer-sub">Competitors can't replicate it</div>
+                  </div>
+                </div>
+              </div>
+              <div class="on-premise-box">
+                <span class="on-premise-emoji">💡</span>
+                <div>
+                  <strong>Want to keep data on-premise?</strong>
+                  <p>We deploy agents on YOUR infrastructure—AWS, Azure, GCP, or private cloud.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Contact Section -->
-      <section id="contact" class="section-contact">
+      <!-- ==================== Use Cases ==================== -->
+      <section class="section-cases" id="use-cases">
         <div class="container">
-          <div class="contact-wrapper">
-            <div class="contact-info">
-              <span class="section-label">Get in Touch</span>
-              <h3 class="section-title">Let's Build Something Intelligent</h3>
-              <p>Share your challenge and we'll respond with a technical approach within 48 hours. No sales pitch—just engineering.</p>
-              
+          <div class="section-header">
+            <h2 class="section-title">Real Results from Custom AI Agents</h2>
+          </div>
+          <div class="cases-grid">
+            <article class="case-card" data-animate>
+              <div class="case-industry-tag">SaaS / B2B</div>
+              <h3 class="case-company">TechFlow</h3>
+              <blockquote class="case-quote">"Our engineering team was spending 40% of sprint time on code reviews and deployment checks instead of building features."</blockquote>
+              <div class="case-divider"></div>
+              <div class="case-built">
+                <strong>Custom Agent Built:</strong>
+                <p>DevOps Automation Agent — PR review, security scanning, CI/CD orchestration</p>
+              </div>
+              <div class="case-results">
+                <div class="case-result"><span>📈</span> Release velocity: <strong>+85%</strong></div>
+                <div class="case-result"><span>💰</span> Engineering time saved: <strong>$180K/year</strong></div>
+                <div class="case-result"><span>⏱️</span> Code review: <strong>4 hrs → 15 min</strong></div>
+              </div>
+              <div class="case-timeline">30-day pilot → full deployment in 60 days</div>
+            </article>
+            <article class="case-card" data-animate>
+              <div class="case-industry-tag">Agriculture / Co-operative</div>
+              <h3 class="case-company">Maharashtra Farmers Co-op</h3>
+              <blockquote class="case-quote">"Farmers had no way to get real-time weather, irrigation, and market price guidance. Extension agents couldn't reach everyone."</blockquote>
+              <div class="case-divider"></div>
+              <div class="case-built">
+                <strong>Custom Agent Built:</strong>
+                <p>Crop Advisory Agent — weather forecasting, irrigation scheduling, price alerts</p>
+              </div>
+              <div class="case-results">
+                <div class="case-result"><span>📈</span> Crop yields: <strong>+21%</strong></div>
+                <div class="case-result"><span>💰</span> Water usage: <strong>-30%</strong></div>
+                <div class="case-result"><span>⏱️</span> Advisory reach: <strong>500 → 3,000 farmers</strong></div>
+              </div>
+              <div class="case-timeline">Pilot with 50 farmers, scaled to 3,000 in 4 months</div>
+            </article>
+            <article class="case-card" data-animate>
+              <div class="case-industry-tag">IT Services / Consulting</div>
+              <h3 class="case-company">CloudOps Partners</h3>
+              <blockquote class="case-quote">"Our operations team was drowning in manual invoice processing, compliance checks, and client reporting."</blockquote>
+              <div class="case-divider"></div>
+              <div class="case-built">
+                <strong>Custom Agent Built:</strong>
+                <p>Operations Automation Agent — invoice processing, compliance auditing, report generation</p>
+              </div>
+              <div class="case-results">
+                <div class="case-result"><span>📈</span> Invoice speed: <strong>3 days → 2 hours</strong></div>
+                <div class="case-result"><span>💰</span> Operational costs: <strong>-$95K/year</strong></div>
+                <div class="case-result"><span>⏱️</span> Team capacity: <strong>+2 FTE equivalent</strong></div>
+              </div>
+              <div class="case-timeline">45-day pilot, expanded to 5 agents</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Pricing ==================== -->
+      <section class="section-pricing" id="pricing">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Flexible Investment Models That Align With Your Goals</h2>
+            <p class="section-subtitle">Whether you're a 10-person startup or a 500-person enterprise, we have a path that works for you—and your budget.</p>
+          </div>
+          <div class="pricing-grid">
+            <div class="pricing-card" data-animate>
+              <div class="pricing-tier-name">Pilot Program</div>
+              <div class="pricing-amount">$10K – $15K</div>
+              <div class="pricing-duration">30-day pilot</div>
+              <ul class="pricing-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  1-2 custom agents
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Discovery workshop (5-7 days)
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Agent design and training
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  30-day pilot deployment
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Performance report &amp; roadmap
+                </li>
+              </ul>
+              <div class="pricing-ideal">Ideal for: Startups, SMBs, first AI project</div>
+              <a href="#contact" class="btn btn-primary btn-block">Start Your Pilot</a>
+            </div>
+            <div class="pricing-card pricing-popular" data-animate>
+              <div class="pricing-popular-badge">Most Popular</div>
+              <div class="pricing-tier-name">Growth Package</div>
+              <div class="pricing-amount">$30K – $75K</div>
+              <div class="pricing-duration">3-6 month engagement</div>
+              <ul class="pricing-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  3-5 custom agents across functions
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Full workflow integration
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Team training and documentation
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  3-6 month optimization period
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Quarterly performance reviews
+                </li>
+              </ul>
+              <div class="pricing-ideal">Ideal for: Growing companies, multi-department automation</div>
+              <a href="#contact" class="btn btn-outline btn-block">Get Custom Quote</a>
+            </div>
+            <div class="pricing-card" data-animate>
+              <div class="pricing-tier-name">Enterprise Custom</div>
+              <div class="pricing-amount">Let's Talk</div>
+              <div class="pricing-duration">3-12 month program</div>
+              <ul class="pricing-features">
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Unlimited custom agents
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Full system integration &amp; APIs
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  Dedicated development team
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  On-premise deployment options
+                </li>
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  SLA guarantees &amp; 24/7 support
+                </li>
+              </ul>
+              <div class="pricing-ideal">Ideal for: Enterprises, complex multi-agent systems</div>
+              <a href="#contact" class="btn btn-primary btn-block">Book Consultation</a>
+            </div>
+          </div>
+          <div class="raas-box">
+            <div class="raas-icon">💡</div>
+            <div class="raas-content">
+              <h3>Results-as-a-Service (RAAS) Available After Pilot</h3>
+              <p>Switch to outcome-based pricing and pay only when agents deliver value. No monthly fees. No seat licenses.</p>
+              <div class="raas-examples">
+                <span class="raas-example">$50 per release shipped (Engineering)</span>
+                <span class="raas-example">$10 per qualified lead (Marketing)</span>
+                <span class="raas-example">$0.50 per invoice processed (Operations)</span>
+                <span class="raas-example">Custom metrics for your business</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Pilot CTA ==================== -->
+      <section class="section-pilot-cta" id="pilot">
+        <div class="container pilot-cta-inner">
+          <h2>Ready to Build Your AI Workforce?</h2>
+          <p>Start with a 30-day pilot. No long-term commitment. See results before you scale.</p>
+          <a href="#contact" class="btn btn-white btn-xl">Start Your Pilot Program</a>
+          <div class="pilot-guarantees">
+            <span class="pilot-guarantee">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Discovery workshop in 5 days
+            </span>
+            <span class="pilot-guarantee">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Custom agents deployed in 30 days
+            </span>
+            <span class="pilot-guarantee">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Full refund if you're not satisfied
+            </span>
+          </div>
+          <a href="#contact" class="pilot-secondary-link">Or: Schedule a 15-Minute Consult →</a>
+        </div>
+      </section>
+
+      <!-- ==================== FAQ ==================== -->
+      <section class="section-faq" id="faq">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                How is this different from using Zapier or Make.com?
+                <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Platforms like Zapier handle simple if/then automations. Our custom AI agents use large language models trained on YOUR data to make intelligent decisions—they can handle unstructured data, complex reasoning, and learn from your business patterns. Think of it as hiring a skilled employee vs. setting up a basic rule.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                How long does it really take to build a custom agent?
+                <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Our standard pilot timeline is 30 days from kickoff to deployment: Week 1 discovery and workflow mapping, Week 2-3 agent development and training, Week 4 testing and deployment. For complex multi-agent systems, we typically need 3-6 months. We start with a focused pilot to prove value before scaling.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What if my data is messy or unstructured?
+                <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>That's normal. Our discovery process includes a full data audit. We can work with PDF documents, unstructured text (emails, support tickets), databases with incomplete records, and APIs with inconsistent formats. We build data cleaning and transformation into the agent pipeline as needed.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                How do you ensure my data stays secure and private?
+                <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Your data is encrypted at rest (AES-256) and in transit (TLS 1.3). We NEVER use your data to train models for other clients. You can choose to deploy agents on YOUR infrastructure (AWS, Azure, GCP, on-premise). We sign NDAs and DPAs before any data exchange. SOC 2 Type II certification is in progress.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What happens to my agents if I stop working with PyOneers?
+                <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>You own everything. All custom code and models are yours. We provide full export of agent configurations, documentation for self-hosting, and 90-day transition support. No vendor lock-in. No hostage-taking. We build for your long-term success.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                How does RAAS (Results-as-a-Service) pricing work?
+                <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>RAAS pricing is outcome-based, not seat-based. You pay per result delivered: $50 per release shipped (Engineering), $10 per qualified lead (Marketing), $0.50 per invoice processed (Operations). We define measurable outcomes together, and pricing is typically 60-70% lower than the human cost of the same task.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What if the pilot doesn't work out?
+                <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>We offer a satisfaction guarantee: if you're not happy with the pilot results, we'll refund 50% of the pilot fee. No questions asked. You keep all documentation and learnings from the discovery phase. Our goal is long-term partnership, not one-time projects.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Can you integrate with our existing tools?
+                <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Almost certainly yes. We've built integrations with Salesforce, HubSpot, Pipedrive, PostgreSQL, MongoDB, Slack, Microsoft Teams, Jira, Asana, Linear, and many more. If you have a proprietary system, we'll build a custom connector. We connect to any REST or GraphQL API.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Final CTA ==================== -->
+      <section class="section-final-cta">
+        <div class="container final-cta-inner">
+          <h2>Don't Settle for Generic AI.</h2>
+          <p>Build Agents That Actually Fit Your Business.</p>
+          <a href="#contact" class="btn btn-primary btn-xl">Start Your 30-Day Pilot</a>
+          <div class="final-contact-info">
+            Questions? Email: <a href="mailto:hello@pyoneers.ai">hello@pyoneers.ai</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== Contact Section ==================== -->
+      <section class="section-contact" id="contact">
+        <div class="container">
+          <div class="contact-layout">
+            <div class="contact-info-col">
+              <span class="section-eyebrow">Get in Touch</span>
+              <h2>Let's Start Your Pilot</h2>
+              <p>Tell us about your automation challenge and we'll respond with a technical approach within 48 hours.</p>
               <div class="contact-details">
-                <div class="contact-detail">
-                  <div class="contact-icon">📧</div>
+                <div class="contact-detail-item">
+                  <div class="contact-detail-icon">📧</div>
                   <div>
                     <div class="contact-detail-label">Email</div>
-                    <div class="contact-detail-value">hello@pyoneers.ai</div>
+                    <div class="contact-detail-value">
+                      <a href="mailto:hello@pyoneers.ai">hello@pyoneers.ai</a>
+                    </div>
                   </div>
                 </div>
-                <div class="contact-detail">
-                  <div class="contact-icon">💼</div>
-                  <div>
-                    <div class="contact-detail-label">Project Types</div>
-                    <div class="contact-detail-value">AI Agents, ML Systems, Automation</div>
-                  </div>
-                </div>
-                <div class="contact-detail">
-                  <div class="contact-icon">⚡</div>
+                <div class="contact-detail-item">
+                  <div class="contact-detail-icon">⚡</div>
                   <div>
                     <div class="contact-detail-label">Response Time</div>
                     <div class="contact-detail-value">Within 48 hours</div>
                   </div>
                 </div>
+                <div class="contact-detail-item">
+                  <div class="contact-detail-icon">🛡️</div>
+                  <div>
+                    <div class="contact-detail-label">Privacy</div>
+                    <div class="contact-detail-value">NDA signed before any data exchange</div>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="contact-form-col">
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-progress">
+                  <div class="form-progress-fill" id="formProgressFill" style="width: 33%"></div>
+                </div>
+                <div class="form-step-indicator">Step <span id="formStepNum">1</span> of 3</div>
 
-            <form id="contactForm" class="contact-form" action="#" onsubmit="return submitForm(event)">
-              <div class="form-group">
-                <label for="name">Name *</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required />
-              </div>
-              
-              <div class="form-group">
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" placeholder="you@company.com" required />
-              </div>
-              
-              <div class="form-group">
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company" placeholder="Your organization" />
-              </div>
-              
-              <div class="form-group">
-                <label for="project">Project Type *</label>
-                <select id="project" name="project" required>
-                  <option value="">Select a project type</option>
-                  <option value="ai-agent">AI Agent Development</option>
-                  <option value="document-ai">Document Intelligence</option>
-                  <option value="cv">Computer Vision</option>
-                  <option value="chatbot">Conversational AI</option>
-                  <option value="llm">LLM Deployment</option>
-                  <option value="automation">Process Automation</option>
-                  <option value="other">Other / Consultation</option>
-                </select>
-              </div>
-              
-              <div class="form-group">
-                <label for="message">Project Details *</label>
-                <textarea id="message" name="message" placeholder="Describe your challenge, timeline, and any technical constraints..." rows="5" required></textarea>
-              </div>
-              
-              <div class="form-actions">
-                <button class="btn btn-primary" type="submit">
-                  <span>Send Message</span>
-                </button>
-                <div id="formStatus" class="status"></div>
-              </div>
-            </form>
+                <!-- Step 1 -->
+                <div class="form-step active" id="formStep1">
+                  <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Your first name" required />
+                    <span class="form-error" id="err-firstName"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Work Email *</label>
+                    <input type="email" id="email" name="email" placeholder="you@company.com" required />
+                    <span class="form-error" id="err-email"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="company">Company Name *</label>
+                    <input type="text" id="company" name="company" placeholder="Your company" required />
+                    <span class="form-error" id="err-company"></span>
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block" id="nextStep1">Next: Tell us your challenge →</button>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="form-step" id="formStep2">
+                  <div class="form-group">
+                    <label for="challenge">Primary Automation Challenge *</label>
+                    <select id="challenge" name="challenge" required>
+                      <option value="">Select your main challenge</option>
+                      <option value="engineering">Engineering / DevOps automation</option>
+                      <option value="marketing">Marketing / sales automation</option>
+                      <option value="operations">Operations / finance automation</option>
+                      <option value="product">Product / research automation</option>
+                      <option value="agriculture">Agriculture / specialized industry</option>
+                      <option value="unsure">Not sure yet</option>
+                    </select>
+                    <span class="form-error" id="err-challenge"></span>
+                  </div>
+                  <div class="form-group">
+                    <label>Team Size *</label>
+                    <div class="radio-group">
+                      <label class="radio-label"><input type="radio" name="teamSize" value="1-10" /> 1-10 people</label>
+                      <label class="radio-label"><input type="radio" name="teamSize" value="11-50" /> 11-50 people</label>
+                      <label class="radio-label"><input type="radio" name="teamSize" value="51-200" /> 51-200 people</label>
+                      <label class="radio-label"><input type="radio" name="teamSize" value="200+" /> 200+ people</label>
+                    </div>
+                    <span class="form-error" id="err-teamSize"></span>
+                  </div>
+                  <div class="form-group">
+                    <label>Previous AI Experience</label>
+                    <select id="aiExp" name="aiExp">
+                      <option value="">Select an option</option>
+                      <option value="yes-failed">Yes, but it didn't fit our needs</option>
+                      <option value="yes-expand">Yes, and we want to expand</option>
+                      <option value="no-first">No, this is our first time</option>
+                      <option value="evaluating">Currently evaluating options</option>
+                    </select>
+                  </div>
+                  <div class="form-step-nav">
+                    <button type="button" class="btn btn-outline" id="prevStep2">← Back</button>
+                    <button type="button" class="btn btn-primary" id="nextStep2">Next: Choose pilot →</button>
+                  </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="form-step" id="formStep3">
+                  <div class="form-group">
+                    <label>Which program interests you?</label>
+                    <div class="radio-group radio-group-cards">
+                      <label class="radio-card">
+                        <input type="radio" name="pilotType" value="quick" />
+                        <span class="radio-card-title">Quick Pilot ($10-15K, 30 days)</span>
+                        <span class="radio-card-desc">Best for testing one specific workflow</span>
+                      </label>
+                      <label class="radio-card">
+                        <input type="radio" name="pilotType" value="growth" />
+                        <span class="radio-card-title">Growth Package ($30-75K, 3-6 months)</span>
+                        <span class="radio-card-desc">Best for multi-department automation</span>
+                      </label>
+                      <label class="radio-card">
+                        <input type="radio" name="pilotType" value="enterprise" />
+                        <span class="radio-card-title">Enterprise Custom (Let's discuss)</span>
+                        <span class="radio-card-desc">Best for complex multi-agent systems</span>
+                      </label>
+                      <label class="radio-card">
+                        <input type="radio" name="pilotType" value="unsure" />
+                        <span class="radio-card-title">Not sure — help me decide</span>
+                        <span class="radio-card-desc">We'll recommend the best fit</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="notes">Anything else we should know? (Optional)</label>
+                    <textarea id="notes" name="notes" placeholder="Describe your challenge, timeline, or any technical constraints..." rows="4"></textarea>
+                  </div>
+                  <div id="formStatus" class="form-status"></div>
+                  <div class="form-step-nav">
+                    <button type="button" class="btn btn-outline" id="prevStep3">← Back</button>
+                    <button type="submit" class="btn btn-primary" id="submitForm">Submit Application</button>
+                  </div>
+                </div>
+
+                <!-- Success state -->
+                <div class="form-success" id="formSuccess" style="display:none;">
+                  <div class="success-icon">✅</div>
+                  <h3>Application Received!</h3>
+                  <p>We'll review your submission and reach out within 48 hours with next steps for your pilot program.</p>
+                  <p class="success-contact">Questions? Email us at <a href="mailto:hello@pyoneers.ai">hello@pyoneers.ai</a></p>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
+
     </main>
 
+    <!-- ==================== Footer ==================== -->
     <footer class="site-footer">
-      <div class="container footer-content">
-        <div class="footer-brand">
-          <h4 class="logo">PyOneers<span class="logo-accent">.</span></h4>
-          <p>AI automation and development company specializing in intelligent solutions for agriculture, enterprise, and innovation.</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h5>Expertise</h5>
-            <ul>
-              <li><a href="#expertise">AI Agents</a></li>
-              <li><a href="#expertise">AgTech</a></li>
-              <li><a href="#expertise">Computer Vision</a></li>
-              <li><a href="#tech-stack">Tech Stack</a></li>
-            </ul>
+      <div class="footer-main">
+        <div class="container footer-grid">
+          <div class="footer-brand">
+            <span class="logo footer-logo">PyOneers<span class="logo-dot">.</span></span>
+            <p>Custom AI agents built on your data. No templates. No compromises. Just outcomes.</p>
           </div>
-          <div class="footer-col">
-            <h5>Company</h5>
-            <ul>
-              <li><a href="#solutions">Solutions</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#contact">Careers</a></li>
-            </ul>
+          <div class="footer-cols">
+            <div class="footer-col">
+              <h4>Product</h4>
+              <ul>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#use-cases">Use Cases</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#pilot">Pilot Program</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="mailto:hello@pyoneers.ai">Careers</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Connect</h4>
+              <ul>
+                <li><a href="mailto:hello@pyoneers.ai">hello@pyoneers.ai</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Twitter/X</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="container footer-bottom">
-        <p>© <span id="year"></span> PyOneers. Built with Python, AI, and precision.</p>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p>© <span id="year"></span> PyOneers. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Security</a>
+          </div>
+        </div>
       </div>
     </footer>
 
